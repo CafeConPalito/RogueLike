@@ -153,10 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottomRooms:
-  - {fileID: 9055584785574382411, guid: 99ff498e65ee0d443ae6596d4d717ce1, type: 3}
-  - {fileID: 548054370778880596, guid: 442a3ffccab971b4481ec3327954782c, type: 3}
   - {fileID: 6524475664378139893, guid: 0a33f517871ec494592302492def3dc1, type: 3}
   - {fileID: 2064939452763744472, guid: 598a4557ee973b04fb50c6056342f4ab, type: 3}
+  - {fileID: 548054370778880596, guid: 442a3ffccab971b4481ec3327954782c, type: 3}
+  - {fileID: 9055584785574382411, guid: 99ff498e65ee0d443ae6596d4d717ce1, type: 3}
   topRooms:
   - {fileID: 7648906771235120326, guid: dece10b1772d122499a5a9e0bf70271c, type: 3}
   - {fileID: 7508052878370167304, guid: adc0ccdb99e46d04186346db9bfd254a, type: 3}
