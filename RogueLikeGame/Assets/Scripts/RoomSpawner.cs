@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
@@ -16,6 +17,7 @@ public class RoomSpawner : MonoBehaviour
     private int rand;
     public bool spawned = false;
 
+    
     public float waitTime = 4f;
 
     void Start()
@@ -28,6 +30,9 @@ public class RoomSpawner : MonoBehaviour
     }
 
 
+    //
+    // Resumen:
+    //     Metodo que spawnea salas. si hay un objeto en el juego con un SpawnPoint Activo (opening direction) le coloca una sala.
     void Spawn()
     {
         if (spawned == false)
@@ -37,6 +42,7 @@ public class RoomSpawner : MonoBehaviour
                 // Need to spawn a room with a BOTTOM door.
                 rand = Random.Range(0, templates.bottomRooms.Length);
                 Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
+                
             }
             else if (openingDirection == 2)
             {
@@ -73,6 +79,7 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
         }
     }
+    
     
 
 }

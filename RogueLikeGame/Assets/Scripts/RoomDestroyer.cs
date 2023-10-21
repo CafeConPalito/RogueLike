@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class RoomDestroyer : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
     }
