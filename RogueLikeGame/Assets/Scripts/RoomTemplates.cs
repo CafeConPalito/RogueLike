@@ -15,14 +15,14 @@ public class RoomTemplates : MonoBehaviour
     public List<GameObject> rooms;
 
     //Tiempo que espera para que al terminar de montar las salas Spawnee el Boss.
-    public float waitTimeBossSpawn;
+    public float waitTime;
     private bool spawnedBoss;
     public GameObject boss;
 
     void Update()
     {
         
-        if (waitTimeBossSpawn <= 0 && spawnedBoss == false)
+        if (waitTime <= 0 && spawnedBoss == false)
         {
             for (int i = 0; i < rooms.Count; i++)
             {
@@ -35,7 +35,7 @@ public class RoomTemplates : MonoBehaviour
         }
         else
         {
-            waitTimeBossSpawn -= Time.deltaTime;
+            waitTime -= Time.deltaTime;
         }
         
     }
