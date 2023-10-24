@@ -75,7 +75,7 @@ public class RoomSpawner : MonoBehaviour
             {
                 Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
                 Component c = gameObject.GetComponentInParent<RoomSpawner>();
-                Debug.Log("Componente: " + c.);
+                Debug.Log("Componente: " + c.name);
                 print("Componente: " + c.name);
                 Destroy(gameObject);
 
